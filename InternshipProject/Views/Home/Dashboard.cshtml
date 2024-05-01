@@ -1,0 +1,17 @@
+﻿@model InternshipProject.Models.EmpLoginModel;
+@{
+}
+<div class="container-fluid">
+    <div class="card" id="dashboard">
+        <div class="dashboard-container">
+            <h1 class="employee-email">Email of Employee is @Model.Email</h1>
+            <h2 class="employee-name">Name of Employee is @Model.Name</h2>
+            <h3 class="employee-id">EmpId of Employee is @Model.EmpId</h3>
+            <div class="links block">
+                <a class="btn" id="pending-req" href="@Url.Action("MyRequests","Home")">Pending Requests</a>
+                <a class="btn" id="new-req" href="@Url.Action("NewRequest","Home")">New Request</a>
+                <a class="btn" id="pending-app" href="@Url.Action("MyApprovals","Home")">Pending Approvals</a>
+            </div>
+        </div>
+    </div>
+</div>

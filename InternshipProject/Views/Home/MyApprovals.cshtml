@@ -1,0 +1,26 @@
+﻿@inject IHttpContextAccessor context
+@model List<InternshipProject.Models.ResponseViewModel>
+@{
+    string email=context.HttpContext.Session.GetString("UserEmail");
+}
+<div class="my-approvals">
+    @if (Model.Count() > 0)
+    {
+        @foreach (var i in Model)
+        {
+            <div class="card">
+                <div class="card-title">
+                    <h3>Request Id: @i.ApprovalRequestViewModelId</h3>
+                </div>
+                <div class="card-body">
+                    <a class="btn btn-success" href="/Home/Respond/@i.ResponseId">Respond</a>
+                </div>
+            </div>
+
+        }
+    }
+    else
+    {
+        <h2>No Pending Approvals!!</h2>
+    }
+</div>

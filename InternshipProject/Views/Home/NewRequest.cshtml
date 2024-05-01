@@ -1,0 +1,68 @@
+﻿@model InternshipProject.Models.ApprovalRequestViewModel;
+@{
+
+}
+<div class="card shadow border-0">
+    <div class="card-header bg-gradient">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>New Approval Request</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-2">
+        <form action="/Home/NewRequest" method="post">
+            <div class="col-12">
+                <label><b>Topic:</b></label>
+                <input name="Topic" class="form-control" type="text" required />
+            </div>
+            <div class="flex-md-row form-group" id="approverEmails">
+                <label>Approvers:</label>
+                <div class="mb-2 approverDiv">
+                    <br />
+                    <input name="ApproverEmails[0].ApproverEmail" class="form-control" />
+                    <button class="fa-solid fa-circle-plus" id="addApprover"></button>
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        var index = 1;
+        function addApproverInput() {
+            var d = document.getElementById('approverEmails');
+            var div = document.createElement('div');
+            d.appendChild(div);
+            div.className = 'approverDiv';
+            var input = document.createElement('input');
+            var icon1 = document.createElement("button");
+            var icon2 = document.createElement("button");
+            icon1.classList.add("fas", "fa-trash-can");
+            icon2.classList.add("fas","fa-circle-plus");
+            icon2.addEventListener('click', addApproverInput);
+            input.type = 'email';
+            input.className = 'form-control';
+            input.name = 'ApproverEmails[' + index + '].ApproverEmail';
+            icon1.addEventListener('click', function () {
+                var parent = icon1.parentElement;
+                parent.remove();
+            });
+            div.appendChild(input);
+            div.appendChild(icon1);
+            div.appendChild(icon2);
+            index++;
+        }
+        document.getElementById('addApprover').addEventListener('click', addApproverInput);
+        document.getElementById('removeApproverbtn').addEventListener('click', removeApprover);
+    </script>
+}
+

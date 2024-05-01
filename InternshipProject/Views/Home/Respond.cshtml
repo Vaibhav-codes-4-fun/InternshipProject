@@ -1,0 +1,19 @@
+﻿@model InternshipProject.Models.ApprovalRequestViewModel
+@{
+}
+<div class="container">
+    <div class="request-details">
+        <h4>Request Raised by: @Model.Email</h4>
+        <h4>Department: @Model.Department</h4>
+        <h4>Request Subject: @Model.Topic</h4>
+        <h4>Request Created On: @Model.Created</h4>
+    </div>
+    <div class="approval-actions d-flex justify-content-end">
+        <form action="/Home/Accept" method="post">
+            <button class="btn btn-success me-2">Accept</button>
+        </form>
+        <form action="/Home/Deny" method="post">
+            <button class="btn btn-danger">Deny</button>
+        </form>
+    </div>
+</div>
