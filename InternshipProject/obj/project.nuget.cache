@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H2xG0+/rjNL6WQ5e6qSLCOUnh5XrGlHFdVHZbBh5DlAFKSsxFsenmOs3xQDkKyvfBdf4IDc5oDYf0h0Bo0rAcA==",
+  "dgSpecHash": "TQuXs+CvvezSO3YxKWycjW1PM6HP4q/ZarsCDlvWelwE7vjkOTYEbNRHIdBOPvohHvCSXVRIOij0EdRBX+ObNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vaibhav\\source\\repos\\InternshipProject\\InternshipProject\\InternshipProject.csproj",
+  "projectFilePath": "C:\\Users\\Vaibhav\\source\\repos\\AspNetMVCProject\\InternshipProject\\InternshipProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vaibhav\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Vaibhav\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

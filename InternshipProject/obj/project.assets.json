@@ -4112,11 +4112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vaibhav\\source\\repos\\InternshipProject\\InternshipProject\\InternshipProject.csproj",
+      "projectUniqueName": "C:\\Users\\Vaibhav\\source\\repos\\AspNetMVCProject\\InternshipProject\\InternshipProject.csproj",
       "projectName": "InternshipProject",
-      "projectPath": "C:\\Users\\Vaibhav\\source\\repos\\InternshipProject\\InternshipProject\\InternshipProject.csproj",
+      "projectPath": "C:\\Users\\Vaibhav\\source\\repos\\AspNetMVCProject\\InternshipProject\\InternshipProject.csproj",
       "packagesPath": "C:\\Users\\Vaibhav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vaibhav\\source\\repos\\InternshipProject\\InternshipProject\\obj\\",
+      "outputPath": "C:\\Users\\Vaibhav\\source\\repos\\AspNetMVCProject\\InternshipProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

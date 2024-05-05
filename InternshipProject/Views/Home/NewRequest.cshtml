@@ -21,7 +21,7 @@
                 <div class="mb-2 approverDiv">
                     <br />
                     <input name="ApproverEmails[0].ApproverEmail" class="form-control" />
-                    <button class="fa-solid fa-circle-plus" id="addApprover"></button>
+                    <button type="button" class="fa-solid fa-circle-plus" id="addApprover"></button>
                     <br />
                 </div>
             </div>
@@ -48,6 +48,7 @@
             var icon2 = document.createElement("button");
             icon1.classList.add("fas", "fa-trash-can");
             icon2.classList.add("fas","fa-circle-plus");
+            icon2.type = 'button';
             icon2.addEventListener('click', addApproverInput);
             input.type = 'email';
             input.className = 'form-control';
@@ -62,6 +63,10 @@
             index++;
         }
         document.getElementById('addApprover').addEventListener('click', addApproverInput);
+        // document.getElementById('approvalForm').addEventListener('keydown', function (event) {
+        //     if (event.key === 'Enter') {
+        //         event.preventDefault();
+        //     }
         document.getElementById('removeApproverbtn').addEventListener('click', removeApprover);
     </script>
 }
